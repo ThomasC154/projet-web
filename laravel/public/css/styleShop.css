@@ -1,0 +1,236 @@
+
+/* Général */
+
+body {
+  /* Définition du fond d'écran du site */
+  background : url("../Images/accueil_light.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+main{
+    min-height: 100%;
+}
+
+/* Header */
+
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
+}
+
+/* .element_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.element_menu li {
+	 display: inline;
+}
+
+.element_menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} */
+
+
+
+
+/* Corps du site */
+body {
+	margin: auto;
+}
+
+h1 {
+	font-family : staywildy, sans-serif;
+	font-size:6em;
+	margin: 0;
+	margin-top :1cm;
+	font-weight:normal; 
+	color : #333;
+}
+
+.form-control{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Photos des produits en vente */
+
+#image {
+	max-width: 100%;
+	height: auto;
+	background: lightblue;
+    background: radial-gradient(white 30%, lightblue 70%);
+    
+}
+
+.shopping-cart{
+    padding: 3% 0;
+}
+
+
+/* Contenu */
+
+#contenu {
+	background-color: white;
+	padding: 15px;
+	text-align: center;
+}
+
+#barre_boutons_admin {
+	background-color: #333;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+	display: inline-block;
+	margin : auto;
+
+}	
+.bouton_admin {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: white;
+    width: 150px;
+    height : 150px;
+    line-height: 150px;
+	padding: 10px;
+	margin : 10px;
+	display : inline-block;
+	text-align: center;
+    /*behavior: url(/PIE.htc);*/
+}
+
+/* Button */
+
+.container #button
+{
+	text-align: center; 
+	margin-top:30px;
+}
+
+.container #button .main-hr
+{
+	width: 30%;
+	border: none;
+	border-top: 1px solid #c3c3c3;
+}
+
+.container #button .icon-btn
+{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #cdcdcd;
+	background: rgba(0,0,0,.5);
+	border-radius: 25px;
+	overflow: hidden;
+	position: relative;
+	transition: width 0.2s ease-in-out;
+}
+
+.container #button .add-btn:hover
+{
+	width: 120px;
+}
+
+.container #button .add-btn::before,
+.container #button .add-btn::after
+{
+	transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 10px;
+	top: calc(50% - 2px);
+	background: red;
+}
+
+.container #button .add-btn::after
+{
+	right: 14px;
+	overflow: hidden;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.container #button .add-btn::before
+{
+	left: 14px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.container #button .icon-btn:focus
+{
+	outline: none;
+}
+
+.container #button .btn-txt
+{
+	opacity: 0;
+	transition: opacity 0.2s;
+	color: white;
+}
+
+.container #button .add-btn:hover::before,
+.container #button .add-btn:hover::after 
+{
+	width: 4px;
+	border-radius: 2px;
+}
+
+.container #button .add-btn:hover .btn-txt
+{
+	opacity: 1;
+}
+
+.container #button .add-icon::after,
+.container #button .add-icon::before
+{
+	transition: all 0.2s ease-in-out;
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 2px;
+	top: calc(50% - 10px);
+	background: red;
+	overflow: hidden;
+}
+.container #button .add-icon::before
+{
+	left: 22px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.container #button .add-icon::after
+{
+	right: 22px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.container #button .add-btn:hover .add-icon::before
+{
+	left: 15px;
+	height: 4px;
+	top: calc(50% - 2px);
+}
+
+.container #button .add-btn:hover .add-icon::after
+{
+	right: 15px;
+	height: 4px;
+	top: calc(50% - 2px);
+}

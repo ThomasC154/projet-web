@@ -1,0 +1,49 @@
+version: '2'
+
+services:
+  mariadb:
+    image: 'bitnami/mariadb:10.1'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=my_user
+      - MARIADB_DATABASE=my_database
+      - MARIADB_PASSWORD=my_password
+    volumes:
+     - ./mariadb:/bitnami/mariadb
+    ports:
+     - 3306:3306
+
+  myapp:
+    tty: true
+    image: bitnami/laravel:6-debian-9
+    environment:
+      - DB_HOST=mariadb
+      - DB_USERNAME=my_user
+      - DB_DATABASE=my_database
+      - DB_PASSWORD=my_password
+    depends_on:
+      - mariadb
+    ports:
+      - 3000:3000
+    volumes:
+      - ./laravel:/app
+    privileged: true # Privileged mode could be required to run this container under Windows
+  nodeapi:
+    tty: true
+    image: "node:10"
+    user: "node"    
+    environment:
+      - DB_HOST=mariadb
+      - DB_USERNAME=my_user
+      - DB_DATABASE=my_database
+      - DB_PASSWORD=my_password
+    working_dir: /home/node/app    
+    depends_on:
+      - mariadb
+    volumes:
+      - ./nodejs:/home/node/app
+    expose:
+      - "8000"
+    ports:
+    - 8000:8000
+    command: "npm start"

@@ -1,0 +1,362 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+#colorWhite{
+	color: lavender;
+}
+
+#section_event
+{
+	height: auto;
+	background: url("../Images/accueil_light.png");
+	background-attachment: scroll;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+#section_event .leftBox
+{
+	padding: 4.2%;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+#section_event .leftBox .content
+{
+	color: #fff;
+	background: rgba(0,0,0,.5);
+	padding: 3.36%;
+	transition:	.5s;
+}
+
+
+#section_event .leftBox .content:hover
+{
+	background: #0056d8;
+}
+
+#section_event .leftBox .content h1
+{
+	margin: 0;
+	padding: 0;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+#section_event .leftBox .content p
+{
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+#section_event .leftBox #button
+{
+	text-align: center; 
+	margin-top:30px;
+}
+
+#section_event .leftBox #button .main-hr
+{
+	width: 30%;
+	border: none;
+	border-top: 1px solid #c3c3c3;
+}
+
+#section_event .leftBox #button .icon-btn
+{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #cdcdcd;
+	background: rgba(0,0,0,.5);
+	border-radius: 25px;
+	overflow: hidden;
+	position: relative;
+	transition: width 0.2s ease-in-out;
+}
+
+#section_event .leftBox #button .add-btn:hover
+{
+	width: 120px;
+}
+
+#section_event .leftBox #button .add-btn::before,
+#section_event .leftBox #button .add-btn::after
+{
+	transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 10px;
+	top: calc(50% - 2px);
+	background: #4387ec;
+}
+
+#section_event .leftBox #button .add-btn::after
+{
+	right: 14px;
+	overflow: hidden;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#section_event .leftBox #button .add-btn::before
+{
+	left: 14px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+#section_event .leftBox #button .icon-btn:focus
+{
+	outline: none;
+}
+
+#section_event .leftBox #button .btn-txt
+{
+	opacity: 0;
+	transition: opacity 0.2s;
+	color: white;
+}
+
+#section_event .leftBox #button .add-btn:hover::before,
+#section_event .leftBox #button .add-btn:hover::after 
+{
+	width: 4px;
+	border-radius: 2px;
+}
+
+#section_event .leftBox #button .add-btn:hover .btn-txt
+{
+	opacity: 1;
+}
+
+#section_event .leftBox #button .add-icon::after,
+#section_event .leftBox #button .add-icon::before
+{
+	transition: all 0.2s ease-in-out;
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 2px;
+	top: calc(50% - 10px);
+	background: #4387ec;
+	overflow: hidden;
+}
+#section_event .leftBox #button .add-icon::before
+{
+	left: 22px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+#section_event .leftBox #button .add-icon::after
+{
+	right: 22px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#section_event .leftBox #button .add-btn:hover .add-icon::before
+{
+	left: 15px;
+	height: 4px;
+	top: calc(50% - 2px);
+}
+
+#section_event .leftBox #button .add-btn:hover .add-icon::after
+{
+	right: 15px;
+	height: 4px;
+	top: calc(50% - 2px);
+}
+
+/*##################################*/
+#section_event .rightBox
+{
+	padding: 4.2%;
+	width: 50%;
+	min-height: 90%;
+	background: rgba(0, 0, 0, 0.589);
+}
+
+
+#detailsCollapse{
+	padding-left: 65%;
+}
+
+#cardMargin{
+	margin: 0% 10% 4% 10%;
+}
+
+.marginTitle{
+	margin: 5% 0% 5% 0%;
+	text-align: center;
+	color: rgb(82, 82, 82);
+}
+
+#imgEvntOld{
+	height: 200px;
+	opacity: 0.8;
+}
+
+.noDecorLink{
+	text-decoration: none;
+	color: rgb(59, 59, 59);
+}
+
+.text-muted{
+	font-size: small;
+	text-align: center;
+	margin: 3% 0% 5% 0%;	
+}
+
+.marginTop-Bot{
+	margin: 3% 0% 5% 0%;
+}
+
+#margin-top{
+	margin-top: 5%;
+}
+#centered-text{
+	margin-left: 50%;
+	margin-bottom: 2%;
+	text-decoration: none;
+}
+
+.card-txt{
+	margin: 5% 0% 5% 0%;
+}
+
+.lib-panel {
+	margin-bottom: 20Px;
+	margin-left: 290px;
+	width: 170%;
+}
+.lib-panel img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+	margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+@media screen and (max-width: 960px)
+{
+	#section_event 
+	{
+		background-position: center;
+		display: block;
+	}
+	#section_event .leftBox
+	{
+		width: 100%;
+		height: auto;
+		float: none;
+		padding: 20px;
+	}
+	#section_event .rightBox
+	{
+		width: 100%;
+		height: auto;
+		background: transparent;
+		float: none;
+	}
+	#section_event .rightBox .content
+	{
+		padding: 20px;
+	}
+	#section_event .rightBox .content h1
+	{
+		font-size: 30px;
+	}
+	#section_event .rightBox ul
+	{
+		position: relative;
+		transform: translateY(0px);
+		padding: 0 20px 20px;
+	}
+	#section_event .rightBox ul li
+	{
+		height: auto;
+		background: rgba(255, 255, 255, .9);
+	}
+	#section_event .rightBox ul li .time
+	{
+		width: 80px;
+		height: 80px;
+		padding: 0;
+	}
+	#section_event .rightBox ul li .time h2
+	{
+		font-size: 30px;
+		line-height: 24px;
+	}
+	#section_event .rightBox ul li .time h2 span
+	{
+		font-size: 20px;
+	}
+	#section_event .rightBox ul li .details
+	{
+		width: 100%;
+		float: none;
+		background: transparent;
+	}
+	#section_event .rightBox ul li .details a
+	{
+		padding: 5px 10px;
+	}
+}
