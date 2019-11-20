@@ -1,6 +1,10 @@
 
 *{
-  font-family: 'poppins';
+  font-family: 'Open sans';
+}
+
+main{
+  min-height: 100%;
 }
 
 #campus
@@ -16,9 +20,6 @@
   height: 100%;
 }
 
-main{
-  padding-top: 60px;
-}
 
 /* Général */
 .banner-bg{
@@ -55,6 +56,10 @@ main{
   font-size: 18px;
 }
 
+#margin_right{
+  margin-right: 5%;
+}
+
 .sizer {
   margin: auto;
   width: 50%;
@@ -67,3 +72,13 @@ main{
 #modalPadding{
   padding: 10% 10% 10% 10%;
 }
+
+.linksed a {
+  color: black;
+  transition: color 0.2s;
+}
+.linksed a:hover {
+  text-decoration: none;
+  color: orange!important;
+}
+

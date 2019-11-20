@@ -6,6 +6,7 @@ use App\Event;
 use App\participates;
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Cache\RedisTaggedCache;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -48,7 +49,7 @@ class ParticipatesController extends Controller
             'event_id' => $event->id,
             'participated' => true]);
 
-        return redirect('events');
+            return redirect('events');
     }
 
     /**

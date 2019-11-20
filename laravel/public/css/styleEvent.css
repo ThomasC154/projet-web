@@ -1,3 +1,4 @@
+
 body
 {
 	margin: 0;
@@ -5,14 +6,15 @@ body
 	font-family: 'Arial', sans-serif;
 }
 
-#colorWhite{
-	color: lavender;
+.colorWhite{
+	color: rgb(70, 70, 70)!important;
+	margin-top: 14%;
+	text-align: center;
 }
 
 #section_event
 {
 	height: auto;
-	background: url("../Images/accueil_light.png");
 	background-attachment: scroll;
 	width: 100%;
 	display: flex;
@@ -22,15 +24,15 @@ body
 
 #section_event .leftBox
 {
+	margin-top: 5.5%;
 	padding: 4.2%;
-	width: 50%;
 	box-sizing: border-box;
 }
 
 #section_event .leftBox .content
 {
 	color: #fff;
-	background: rgba(0,0,0,.5);
+	background: rgb(43, 43, 43);
 	padding: 3.36%;
 	transition:	.5s;
 }
@@ -38,7 +40,8 @@ body
 
 #section_event .leftBox .content:hover
 {
-	background: #0056d8;
+	color: rgb(8, 8, 8);
+	background: orange;
 }
 
 #section_event .leftBox .content h1
@@ -94,7 +97,8 @@ body
 	height: 4px;
 	width: 10px;
 	top: calc(50% - 2px);
-	background: #4387ec;
+	color: black;
+	background: orange;
 }
 
 #section_event .leftBox #button .add-btn::after
@@ -145,7 +149,8 @@ body
 	height: 20px;
 	width: 2px;
 	top: calc(50% - 10px);
-	background: #4387ec;
+	color: black;
+	background: orange;
 	overflow: hidden;
 }
 #section_event .leftBox #button .add-icon::before
@@ -177,13 +182,6 @@ body
 }
 
 /*##################################*/
-#section_event .rightBox
-{
-	padding: 4.2%;
-	width: 50%;
-	min-height: 90%;
-	background: rgba(0, 0, 0, 0.589);
-}
 
 
 #detailsCollapse{
@@ -191,7 +189,7 @@ body
 }
 
 #cardMargin{
-	margin: 0% 10% 4% 10%;
+	margin: 3% 13% 4% 13%;
 }
 
 .marginTitle{
@@ -200,13 +198,9 @@ body
 	color: rgb(82, 82, 82);
 }
 
-#imgEvntOld{
-	height: 200px;
-	opacity: 0.8;
-}
 
 .noDecorLink{
-	text-decoration: none;
+	text-decoration: none!important;
 	color: rgb(59, 59, 59);
 }
 
@@ -223,6 +217,12 @@ body
 #margin-top{
 	margin-top: 5%;
 }
+
+#top-success{
+	margin-top: 5%;
+	padding-right: -15%;
+}
+
 #centered-text{
 	margin-left: 50%;
 	margin-bottom: 2%;
@@ -291,72 +291,4 @@ body
 
 .no-padding {
     padding: 0;
-}
-
-
-@media screen and (max-width: 960px)
-{
-	#section_event 
-	{
-		background-position: center;
-		display: block;
-	}
-	#section_event .leftBox
-	{
-		width: 100%;
-		height: auto;
-		float: none;
-		padding: 20px;
-	}
-	#section_event .rightBox
-	{
-		width: 100%;
-		height: auto;
-		background: transparent;
-		float: none;
-	}
-	#section_event .rightBox .content
-	{
-		padding: 20px;
-	}
-	#section_event .rightBox .content h1
-	{
-		font-size: 30px;
-	}
-	#section_event .rightBox ul
-	{
-		position: relative;
-		transform: translateY(0px);
-		padding: 0 20px 20px;
-	}
-	#section_event .rightBox ul li
-	{
-		height: auto;
-		background: rgba(255, 255, 255, .9);
-	}
-	#section_event .rightBox ul li .time
-	{
-		width: 80px;
-		height: 80px;
-		padding: 0;
-	}
-	#section_event .rightBox ul li .time h2
-	{
-		font-size: 30px;
-		line-height: 24px;
-	}
-	#section_event .rightBox ul li .time h2 span
-	{
-		font-size: 20px;
-	}
-	#section_event .rightBox ul li .details
-	{
-		width: 100%;
-		float: none;
-		background: transparent;
-	}
-	#section_event .rightBox ul li .details a
-	{
-		padding: 5px 10px;
-	}
 }

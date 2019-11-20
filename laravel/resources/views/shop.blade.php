@@ -7,6 +7,15 @@
 <!-- Le corps -->
 <div class="container">
 
+    <div class="content">
+        <h1>Boutique</h1>
+        @if(Auth::check())
+        <p>Vous pouvez acheter des articles ici:  </p>
+        @else
+        <a href="/login">Connectez-vous</a> pour pouvoir procéder acheter des articles </h5>
+        @endif
+    </div>
+
 <input class="form-control" type="text" placeholder="Search" aria-label="Search">
 
 
@@ -52,10 +61,10 @@
             @guest
             @else
             <a href="{{ route('article.addToCart', ['id' => $article->id]) }}" class="btn btn-warning" role="button">
-            Add to Cart <i class='fas fa-shopping-cart'></i></a>
+            Ajouter au panier <i class='fas fa-shopping-cart'></i></a>
              <br><br>
             <?php if( Auth::user()->status == 5) { ?>
-                <a  href="{{ route('shop.show', $article) }}" class='btn btn-warning' > Delete </a>
+                <a  href="{{ route('shop.show', $article) }}" class='btn btn-warning' > Supprimer </a>
             <?php } ?>
 
               @endguest

@@ -41,6 +41,16 @@ class EventController extends Controller
     public function store(Request $request)
     {
         $user_id = Auth::user()->id;
+
+        $this->validate($request,[
+            'name' => 'required|min:3',
+            'date' => 'required',
+            'location' => 'required|min:3',
+            'price' => 'required',
+            'description' => 'required|min:5',
+        ]);
+
+
         
         $events = Event::create([
             'campus_id' => 1,

@@ -36,7 +36,7 @@
 @else
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Authentification requise</h5>
+            <h5 class="card-title">Connexion requise</h5>
             <p class="card-text">Vous devez vous connectez pour commenter.</p>
             <a href="{{ route('login') }}" class="btn btn-primary">Connexion</a>
         </div>

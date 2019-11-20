@@ -19,13 +19,13 @@
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="Images/png1.jpg" alt="Image" width="500" height="400">
+                            <img src="Images/png1.png" alt="Image" width="500" height="400">
                         </div>
                         <div class="carousel-item">
-                            <img src="Images/png2.jpg" alt="Image" width="500" height="400">
+                            <img src="Images/png2.png" alt="Image" width="500" height="400">
                         </div>
                         <div class="carousel-item">
-                            <img src="Images/png3.jpg" alt="Image" width="2200" height="400">
+                            <img src="Images/png3.png" alt="Image" width="2200" height="400">
                         </div>
                     </div>
 
@@ -43,7 +43,7 @@
 
         <div class="col-md-12 text-center">
             <a href="events"><button id="singlebutton" name="singlebutton"
-                    class="btn btn-primary btn-lg">Évenements</button></a>
+                    class="btn btn-warning btn-lg">Évenements</button></a>
         </div>
     </section>
     

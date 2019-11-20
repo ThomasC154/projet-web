@@ -26,6 +26,8 @@ Route::get('/events', function () {
 });
 
 
+
+
 // Route::get('/cart', function () {
 //     return view('cart');
 // });
@@ -44,14 +46,23 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
+Route::get('/event_old', function () {
+    return view('events_old');
+});
+
+
 Route::resource('shop', 'ArticleController');
 
 Route::resource('create', 'ArticleController');
 
 Route::resource('events', 'EventController');
 
+
+
 Route::post('','ParticipatesController@store', function ($id) {
     return App\Flight::findOrFail($id);});
+
+
 
 Route::get('/create', 'ArticleController@store');
 

@@ -1,73 +1,44 @@
-/* Create footer */
-footer
-{
-    padding: 30px 0;
-    background-color: #606060;
+.footer {
+  background: #343a40; 
+}
+.footer .links ul {
+  list-style-type: none;
+}
+.footer .links a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .links a:hover {
+  text-decoration: none;
+  color: orange;
+}
+.footer .about-company i {
+  font-size: 25px;
+}
+.footer .about-company a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .about-company a:hover {
+    text-decoration: none;
+  color: orange;
+}
+.footer .location i {
+  font-size: 18px;
+}
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Center footer content */
-footer #inner_footer
-{
-    display: flex;
-    margin: auto auto;
+.footer_social{
+    margin-top: 2%;
+    padding-right: 4%;
 }
 
-/* first box content */
-footer #inner_footer #footer_copyright
-{
-    color: #B9B9B9;
-    font-family: 'Open Sans', sans-serif;
-    flex: 1 1 auto;
-}
-
-/* Copyright text */
-footer #inner_footer #footer_copyright p
-{
-    color: #B9B9B9;
-    font-size: 18px;
-	width: 100%;
-	margin: 18px;
+#aligned-copyright{
     text-align: center;
 }
 
-/* social box content */
-footer #inner_footer #footer_social
-{
-    text-align: center;
-    flex: 1 1 auto;
-}
-
-/* Social Link */
-footer #inner_footer #footer_social a
-{
-    text-decoration:none;
-    color: #B9B9B9;
-    padding: 14px;
-
-}
-
-/* mention box content */
-footer #inner_footer #footer_mention
-{
-    font-family: 'Open Sans', sans-serif;
-    flex: 1 1 auto;
-}
-
-/* mention link */
-footer #inner_footer #footer_mention a
-{
-    color: #B9B9B9;
-    display: block;
-    font-size: 18px;
-    padding-bottom: 5px;
-    text-align: center;
-}
-
-/* responsive */
-@media(max-width: 800px)
-{
-    footer #inner_footer
-    {
-        display: block;
-    }
+.color-white{
+    color: rgb(214, 214, 214);
 }

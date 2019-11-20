@@ -10,10 +10,6 @@ body {
     background-size: cover;
 }
 
-main{
-    min-height: 100%;
-}
-
 /* Header */
 
 #cart_count{
@@ -59,11 +55,6 @@ h1 {
 	color : #333;
 }
 
-.form-control{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 /* Photos des produits en vente */
 
 #image {
@@ -85,6 +76,23 @@ h1 {
 	background-color: white;
 	padding: 15px;
 	text-align: center;
+}
+.content{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	color: lavender;
+	background: #151515;
+}
+
+.content h1{
+	color: orange;
+}
+
+.content h2{
+	color: orange;
 }
 
 #barre_boutons_admin {
@@ -153,7 +161,7 @@ h1 {
 	height: 4px;
 	width: 10px;
 	top: calc(50% - 2px);
-	background: red;
+	background: orange;
 }
 
 .container #button .add-btn::after
@@ -204,7 +212,7 @@ h1 {
 	height: 20px;
 	width: 2px;
 	top: calc(50% - 10px);
-	background: red;
+	background: orange;
 	overflow: hidden;
 }
 .container #button .add-icon::before

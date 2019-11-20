@@ -23,6 +23,7 @@ class ComposerStaticInit8b7efcb101f5af9986900bd66ba41375
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        '6292c1671f9440c89e0af20a0f78754a' => __DIR__ . '/..' . '/laracasts/utilities/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -68,6 +69,7 @@ class ComposerStaticInit8b7efcb101f5af9986900bd66ba41375
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Spatie\\Honeypot\\' => 16,
+            'Spatie\\BladeJavaScript\\' => 23,
         ),
         'R' => 
         array (
@@ -100,6 +102,7 @@ class ComposerStaticInit8b7efcb101f5af9986900bd66ba41375
             'Laravelista\\Comments\\' => 21,
             'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
+            'Laracasts\\Utilities\\JavaScript\\' => 31,
         ),
         'J' => 
         array (
@@ -256,6 +259,10 @@ class ComposerStaticInit8b7efcb101f5af9986900bd66ba41375
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-honeypot/src',
         ),
+        'Spatie\\BladeJavaScript\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -311,6 +318,10 @@ class ComposerStaticInit8b7efcb101f5af9986900bd66ba41375
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'Laracasts\\Utilities\\JavaScript\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laracasts/utilities/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -2094,6 +2105,13 @@ class ComposerStaticInit8b7efcb101f5af9986900bd66ba41375
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Laracasts\\Utilities\\JavaScript\\JavaScriptFacade' => __DIR__ . '/..' . '/laracasts/utilities/src/JavaScriptFacade.php',
+        'Laracasts\\Utilities\\JavaScript\\JavaScriptServiceProvider' => __DIR__ . '/..' . '/laracasts/utilities/src/JavaScriptServiceProvider.php',
+        'Laracasts\\Utilities\\JavaScript\\LaravelViewBinder' => __DIR__ . '/..' . '/laracasts/utilities/src/LaravelViewBinder.php',
+        'Laracasts\\Utilities\\JavaScript\\Transformers\\DefaultTransformer' => __DIR__ . '/..' . '/laracasts/utilities/src/Transformers/DefaultTransformer.php',
+        'Laracasts\\Utilities\\JavaScript\\Transformers\\ObjectTransformer' => __DIR__ . '/..' . '/laracasts/utilities/src/Transformers/ObjectTransformer.php',
+        'Laracasts\\Utilities\\JavaScript\\Transformers\\Transformer' => __DIR__ . '/..' . '/laracasts/utilities/src/Transformers/Transformer.php',
+        'Laracasts\\Utilities\\JavaScript\\ViewBinder' => __DIR__ . '/..' . '/laracasts/utilities/src/ViewBinder.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -3470,6 +3488,16 @@ class ComposerStaticInit8b7efcb101f5af9986900bd66ba41375
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Spatie\\BladeJavaScript\\BladeJavaScriptServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/BladeJavaScriptServiceProvider.php',
+        'Spatie\\BladeJavaScript\\Exceptions\\Untransformable' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Exceptions/Untransformable.php',
+        'Spatie\\BladeJavaScript\\Renderer' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Renderer.php',
+        'Spatie\\BladeJavaScript\\Transformers\\ArrayTransformer' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Transformers/ArrayTransformer.php',
+        'Spatie\\BladeJavaScript\\Transformers\\BooleanTransformer' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Transformers/BooleanTransformer.php',
+        'Spatie\\BladeJavaScript\\Transformers\\NullTransformer' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Transformers/NullTransformer.php',
+        'Spatie\\BladeJavaScript\\Transformers\\NumericTransformer' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Transformers/NumericTransformer.php',
+        'Spatie\\BladeJavaScript\\Transformers\\ObjectTransformer' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Transformers/ObjectTransformer.php',
+        'Spatie\\BladeJavaScript\\Transformers\\StringTransformer' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Transformers/StringTransformer.php',
+        'Spatie\\BladeJavaScript\\Transformers\\Transformer' => __DIR__ . '/..' . '/spatie/laravel-blade-javascript/src/Transformers/Transformer.php',
         'Spatie\\Honeypot\\EncryptedTime' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/EncryptedTime.php',
         'Spatie\\Honeypot\\HoneypotServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/HoneypotServiceProvider.php',
         'Spatie\\Honeypot\\HoneypotViewComposer' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/HoneypotViewComposer.php',
